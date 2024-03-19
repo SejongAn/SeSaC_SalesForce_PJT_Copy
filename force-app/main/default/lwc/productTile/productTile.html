@@ -1,0 +1,10 @@
+<template>
+    <div class="product-tile" >
+      <template for:each={products} for:item="product" >
+        <div key={product.Id} class="tile">
+          <img src={product.DisplayUrl} alt={product.Name} />
+          <p class="product-name">{product.Name}</p>
+        </div>
+      </template>
+    </div>
+  </template>

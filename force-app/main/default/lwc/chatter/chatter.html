@@ -1,0 +1,11 @@
+<template>
+    <div class="chatter-feed">
+        <template for:each={feedItems} for:item="feedItem">
+            <div key={feedItem.Id} class="feed-item">
+                <div>{feedItem.CreatedDate}</div>
+                <div>{feedItem.Title}</div>
+                <div>{feedItem.Body}</div>
+            </div>
+        </template>
+    </div>
+</template>

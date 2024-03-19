@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="고객 등급" icon-name="standard:contact">
+        <div class="slds-m-around_medium text-container">
+            <p class="slds-text-heading_medium">예상 등급: <strong>{levelIndicator}</strong></p><h3>(금일 기준)</h3>
+            <div class="custom-gauge-container"> 
+                <div class="custom-gauge-size">
+                    <lightning-progress-ring value={gaugeValue}></lightning-progress-ring>
+                    <p class="gauge-percentage">{gaugeValueFormatted}%</p>
+                </div>
+            </div>
+            <p class="slds-text-body_regular">최근 90일 구매 금액: <strong> {formattedRecentPurchase}</strong></p>
+            <p class="slds-text-body_regular">다음 등급까지 남은 금액: <strong>{formattedNextLevelAmount}</strong></p>
+        </div>
+    </lightning-card>
+</template>

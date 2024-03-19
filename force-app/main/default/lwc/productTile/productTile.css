@@ -1,0 +1,23 @@
+.product-tile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .tile {
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .tile img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-name {
+    margin-top: 10px;
+    font-weight: bold;
+  }

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card icon-name="standard:feedback">
+        <div slot="title" class="custom-title">상담 제목: {Name}</div>
+        <div class="slds-m-around_medium">
+            <div class="content-box">
+                <lightning-textarea label="상담 내용" value={Description}
+                    onchange={handleDescriptionChange}></lightning-textarea>
+            </div>
+        </div>
+        <!-- 버튼 중앙 정렬을 위해 .button-container 클래스를 추가 -->
+        <div class="button-container">
+            <lightning-button label="저장" onclick={saveRecord}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,38 @@
+.custom-title {
+    font-size: 1.2rem; /* Larger font size for the title */
+    font-weight: bold; /* Optional: Makes the title text bold */
+    margin-bottom: 0.2rem; 
+    width: 100%;/* Adjust spacing below the title if needed */
+}
+.custom-title lightning-input {
+    width: 100%; /* lightning-input의 너비를 컨테이너의 100%로 설정 */
+}
+.lightning-textarea{
+    width: 100%;
+}
+.content-box {
+    padding: 1rem; /* Adds space inside the box */
+    background-color: #f9f9f9; /* Light background color for the content box */
+    border: 1px solid #d8dde6; /* Subtle border around the content box */
+    border-radius: 0.25rem; /* Slightly rounded corners for a softer look */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1); /* Soft shadow for depth */
+    margin-top: 1rem; /* Space above the content box */
+}
+
+.content-box p {
+    font-size: 1rem; /* Increased font size for better readability */
+    line-height: 1.6; /* Adjusted line height for the larger font size */
+    color: #3e3e3c; /* Slightly softer text color for readability */
+    margin: 0; /* Remove default paragraph margin */
+    padding: 0.5rem; /* Add some padding around the text */
+}
+
+.no-description {
+    color: #707070; /* Gray color for 'no description' text */
+    font-style: italic; /* Italicize the 'no description' text */
+    font-size: 1rem; /* Ensure consistency in font size */
+} 
+.button-container {
+    text-align: center; /* 버튼을 컨테이너의 중앙에 위치시킴 */
+    padding: 0.3rem; /* 버튼 주변에 약간의 공간 추가 */
+}

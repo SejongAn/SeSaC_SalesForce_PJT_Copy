@@ -1,0 +1,11 @@
+<template>
+    <div class="top-products-container">
+        <template for:each={products} for:item="product">
+            <div key={product.Id} class="product-tile">
+                <div class="ranking">누적판매 {product.rank}위</div>
+                <img class="product-image" src={product.DisplayUrl} alt={product.Name} />
+                <p class="product-name">{product.Name}</p>
+            </div>
+        </template>
+    </div>
+</template>

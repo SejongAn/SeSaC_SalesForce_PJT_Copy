@@ -1,0 +1,15 @@
+.container {
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    align-items: stretch;
+    width: 100%;
+}
+
+.map-container {
+    width: 80%;
+}
+
+.list-view {
+    width: 20%; 
+}
