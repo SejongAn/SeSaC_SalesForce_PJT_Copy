@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PhoneForm</fullName>
+    <active>true</active>
+    <description>연락처 형식을 000-0000-0000 형식으로만 입력 가능하도록 하는 유효성 검사식입니다.</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(Phone)),
+NOT(REGEX(Phone, &quot;[0-9]{3}-[0-9]{4}-[0-9]{4}&quot;)
+))</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>000-0000-0000 형식으로 기입해주세요
+(Ex: 010-1234-5678)</errorMessage>
+</ValidationRule>

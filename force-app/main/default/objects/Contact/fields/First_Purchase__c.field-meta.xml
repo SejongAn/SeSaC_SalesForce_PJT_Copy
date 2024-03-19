@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Purchase__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>첫 구매로 이어진 지점</description>
+    <externalId>false</externalId>
+    <label>인입지점</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>고객</relationshipLabel>
+    <relationshipName>Contact_Account_First</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

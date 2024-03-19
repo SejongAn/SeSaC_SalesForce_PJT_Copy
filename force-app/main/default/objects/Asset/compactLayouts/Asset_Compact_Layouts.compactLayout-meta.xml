@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asset_Compact_Layouts</fullName>
+    <fields>Name</fields>
+    <fields>AccountId</fields>
+    <fields>Order__c</fields>
+    <fields>SerialNumber__c</fields>
+    <fields>Refund__c</fields>
+    <label>Asset Compact Layouts</label>
+</CompactLayout>

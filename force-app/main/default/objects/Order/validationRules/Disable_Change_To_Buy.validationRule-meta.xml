@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_Change_To_Buy</fullName>
+    <active>true</active>
+    <description>&apos;환불&apos;상태에서 &apos;구매&apos;상태로 변경 불가능하게 설정</description>
+    <errorConditionFormula>AND(
+ISCHANGED( Status ),
+ISPICKVAL( PRIORVALUE( Status ), &apos;Refund&apos; )
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>&apos;환불&apos;상태에서 &apos;구매&apos;상태로 변경 불가능합니다.</errorMessage>
+</ValidationRule>

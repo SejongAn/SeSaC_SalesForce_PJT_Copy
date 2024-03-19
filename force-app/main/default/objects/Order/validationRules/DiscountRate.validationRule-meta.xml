@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DiscountRate</fullName>
+    <active>true</active>
+    <description>할인율 20%초과 불가능</description>
+    <errorConditionFormula>OR(
+    DIscount_Rate__c &lt; 0,
+    DIscount_Rate__c &gt; 0.2
+)</errorConditionFormula>
+    <errorDisplayField>DIscount_Rate__c</errorDisplayField>
+    <errorMessage>할인율은 20%까지 설정가능합니다.</errorMessage>
+</ValidationRule>

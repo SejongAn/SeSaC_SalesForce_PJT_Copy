@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_Change_To_Consulting</fullName>
+    <active>true</active>
+    <description>&apos;구매&apos;에서 &apos;상담&apos;으로 변경 불가능하게 설정</description>
+    <errorConditionFormula>AND(
+ISCHANGED( StageName ),
+ISPICKVAL( PRIORVALUE( StageName ), &apos;구매&apos; )
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>&apos;구매&apos;단계에서 &apos;상담&apos;단계로 변경 불가능합니다.</errorMessage>
+</ValidationRule>
