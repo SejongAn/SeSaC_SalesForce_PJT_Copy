@@ -22,13 +22,13 @@ public class AssetTriggerHandler {
             Decimal discountedPrice = itemPrice * (1 - discountRate / 100); //한일률 적용햇을때의 가격
 
             if (!sumLaptopByContact.containsKey(asset.ContactId)) { //sumLaptop이 Asset의 ContactId를 포함하고 있지 않다면 
-                sumLaptopByContact.put(asset.ContactId, 0); //?
-                sumAccessoryByContact.put(asset.ContactId, 0); //?
+                sumLaptopByContact.put(asset.ContactId, 0); //해당 contact의 필드 값을 0으로 초기화
+                sumAccessoryByContact.put(asset.ContactId, 0);
             }
 
             if (asset.Product2.Family == 'Laptop') { //Laptop이라면
-                sumLaptopByContact.put(asset.ContactId, sumLaptopByContact.get(asset.ContactId) + discountedPrice);
-                //
+                sumLaptopByContact.put(asset.ContactId, sumLaptopByContact.get(asset.ContactId) + discountedPrice); 
+                //해당 Contact의 필드값에 할인된 가격 추가해줌 
             } else if (asset.Product2.Family == 'Accessory') { //Accessory라
                 sumAccessoryByContact.put(asset.ContactId, sumAccessoryByContact.get(asset.ContactId) + discountedPrice);
             }
